@@ -1,84 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Under Construction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Website | Blog & Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --main-color: #292929; --text-color: #292929; --gray: #757575; }
+        body { font-family: 'Inter', sans-serif; color: var(--text-color); margin: 0; line-height: 1.6; }
+        .container { max-width: 700px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { padding: 25px 0; border-bottom: 1px solid #eee; margin-bottom: 50px; }
+        .logo { font-weight: 700; font-size: 24px; text-decoration: none; color: black; }
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+        /* Article Preview */
+        article { margin-bottom: 60px; cursor: pointer; }
+        h1 { font-family: 'Lora', serif; font-size: 32px; margin-bottom: 10px; }
+        p.excerpt { font-size: 18px; color: var(--gray); margin-bottom: 15px; }
+        .meta { font-size: 14px; color: var(--gray); }
 
-    body {
-      height: 100vh;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 600px;
-      padding: 40px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-      margin-bottom: 30px;
-    }
-
-    .divider {
-      width: 60px;
-      height: 4px;
-      background: #ffffff;
-      margin: 0 auto 30px;
-      border-radius: 2px;
-    }
-
-    .footer {
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+        /* Newsletter Box */
+        .newsletter { background: #f9f9f9; padding: 40px; border-radius: 8px; margin-top: 80px; text-align: center; }
+        input[type="email"] { padding: 10px; width: 60%; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 20px; background: black; color: white; border: none; border-radius: 20px; cursor: pointer; }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>🚧 Under Construction</h1>
-    <div class="divider"></div>
-    <p>
-      We’re working hard behind the scenes to bring you something awesome.  
-      Please check back soon!
-    </p>
-    <div class="footer">
-      © 2026 See ya soon!
+<header>
+    <div class="container">
+        <a href="#" class="logo">World Website</a>
     </div>
-  </div>
+</header>
+
+<main class="container">
+    <article>
+        <div class="meta">18 Mars 2026 • 5 min de lecture</div>
+        <h1>Bienvenue sur World Website</h1>
+        <p class="excerpt">Découvrez notre vision pour un partage d'idées clair et minimaliste, inspiré par les meilleures plateformes de lecture.</p>
+        <div class="meta">#Technologie #Futur</div>
+    </article>
+
+    <section class="newsletter">
+        <h2>Restez informé</h2>
+        <p>Inscrivez-vous pour recevoir nos articles directement par mail.</p>
+        <form>
+            <input type="email" placeholder="Votre adresse email..." required>
+            <button type="submit">S'abonner</button>
+        </form>
+    </section>
+</main>
 
 </body>
 </html>
