@@ -1,0 +1,26 @@
+:root { 
+    --main-color: #292929; 
+    --text-color: #292929; 
+    --gray: #757575; 
+    /* Ajoute cette ligne pour la couleur de fond */
+    --bg-color: #f4f1ea; 
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    color: var(--text-color); 
+    margin: 0; 
+    line-height: 1.6; 
+    /* Applique la couleur ici */
+    background-color: var(--bg-color); 
+}
+
+/* Optionnel : Rendre la box newsletter blanche pour qu'elle ressorte sur le pastel */
+.newsletter { 
+    background: white; 
+    padding: 40px; 
+    border-radius: 8px; 
+    margin-top: 80px; 
+    text-align: center;
+    border: 1px solid #eee; /* Un petit bord discret */
+}
