@@ -24,3 +24,16 @@ body {
     text-align: center;
     border: 1px solid #eee; /* Un petit bord discret */
 }
+
+.post-content p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 50px 0;
+}
